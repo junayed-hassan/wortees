@@ -1,0 +1,35 @@
+/* Global Css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Gilroy Font */
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Satoshi Font */
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
