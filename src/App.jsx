@@ -1,3 +1,5 @@
+import OurPromise from "./component/ourPromise/OurPromise";
+import Footer from "./component/footer/Footer";
 import Navbar from "./component/navbar/Navbar";
 import { Outlet } from "react-router";
 
@@ -6,6 +8,8 @@ function App() {
     <>
       <Navbar />
       <Outlet />
+      <OurPromise/>
+      <Footer/>
     </>
   );
 }

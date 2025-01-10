@@ -2,7 +2,7 @@ import Collezione from '../component/collezione/Collezione';
 import Manifesto from '../component/manifesto/Manifesto';
 import { createBrowserRouter } from 'react-router-dom';
 import Contatti from '../component/contatti/Contatti';
-import Header from '../component/home/Header';
+import Home from '../component/home/home';
 import App from '../App';
 
 const router = createBrowserRouter([
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Header />
+                element: <Home />
             },
             {
                 path: "/manifesto",
