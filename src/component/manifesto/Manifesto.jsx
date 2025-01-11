@@ -1,8 +1,12 @@
+import Details from "../detailsPage/Details"
+
 
 
 function Manifesto() {
   return (
-    <div>Manifesto</div>
+    <>
+      <Details/>
+    </>
   )
 }
 
