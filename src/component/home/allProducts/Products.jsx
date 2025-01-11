@@ -4,12 +4,12 @@ function Products() {
     <div className="p-2.5 rounded-lg bg-white drop-shadow-md ">
       <div className="relative">
         <img src={Product} alt="Product" />
-        <span className="absolute px-2.5 py-[1px] text-sm bg-white border top-2 right-2 rounded-xl">
+        <span className="absolute px-2.5 pb-[2px] text-sm bg-white border top-2 right-2 rounded-xl">
           Oversize
         </span>
       </div>
       <div>
-        <h2 className="mt-4 mb-2.5 text-xl font-semibold">Zapoj</h2>
+        <h2 className="mt-4 mb-2.5 text-xl font-bold">Zapoj</h2>
         <p className="text-base font-medium">
           Binge drinking; two or more days of continuous drunkenness.
         </p>

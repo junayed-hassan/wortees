@@ -102,7 +102,9 @@ function Navbar() {
     <div className="flex items-center justify-between px-10 border-b-2 border-dashed py-7">
       {/* Logo Section */}
       <div>
-        <img src={Vector} alt="Logo" className="w-36" />
+        <Link to={"/"}>
+          <img src={Vector} alt="Logo" className="w-36" />
+        </Link>
       </div>
 
       {/* Navigation Links */}
