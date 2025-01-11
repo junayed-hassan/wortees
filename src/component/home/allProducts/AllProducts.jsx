@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Fixed import
 import Product from "../../../assets/images/ProductImage.png";
 import Products from "./Products";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -36,12 +37,14 @@ function AllProducts() {
           <Products />
           <Products />
         </div>
-        <button className="text-center gap-4 mx-auto block bg-[#A81A18] py-4 px-7 rounded-xl text-white">
-          <span className="pr-2 uppercase">Vedi  tutte</span>
-          <span>
-            <ArrowForwardIcon />
-          </span>
-        </button>
+        <Link to="/allProducts">
+          <button className="text-center gap-4 mx-auto block bg-[#A81A18] py-4 px-7 rounded-xl text-white">
+            <span className="pr-2 uppercase">Vedi tutte</span>
+            <span>
+              <ArrowForwardIcon />
+            </span>
+          </button>
+        </Link>
       </div>
     </>
   );

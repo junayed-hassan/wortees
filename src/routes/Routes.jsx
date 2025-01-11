@@ -1,3 +1,4 @@
+import AllProducts from '../component/seeAllProducts/AllProducts';
 import Collezione from '../component/collezione/Collezione';
 import Manifesto from '../component/manifesto/Manifesto';
 import { createBrowserRouter } from 'react-router-dom';
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
             {
                 path: "/contatti",
                 element: <Contatti />
+            }
+            ,
+            {
+                path: "/allProducts",
+                element: <AllProducts />
             }
         ]
     }
