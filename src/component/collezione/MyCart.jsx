@@ -7,6 +7,7 @@ import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import AddIcon from "@mui/icons-material/Add";
 import Slider from "./slider/Slider";
+import { Link } from "react-router";
 
 export default function MyCart() {
   return (
@@ -206,19 +207,23 @@ export default function MyCart() {
                   <p>(including 10,82 € VAT)</p>
                 </div>
               </div>
-              <button className="text-center mt-10 shadow-xl gap-4 mx-auto block bg-[#A81A18] py-2.5 px-5 rounded-xl text-white">
-                <span className="pr-2 uppercase">Proceed to checkout</span>
-                <span>
-                  <ArrowForwardIcon />
-                </span>
-              </button>
-              <p className="pt-4 pb-2 text-center uppercase">Back to Shopping</p>
+              <Link to="/Checkout">
+                <button className="text-center mt-10 shadow-xl gap-4 mx-auto block bg-[#A81A18] py-2.5 px-5 rounded-xl text-white">
+                  <span className="pr-2 uppercase">Proceed to checkout</span>
+                  <span>
+                    <ArrowForwardIcon />
+                  </span>
+                </button>
+              </Link>
+              <p className="pt-4 pb-2 text-center uppercase">
+                Back to Shopping
+              </p>
             </div>
           </div>
         </div>
         <div className="pb-10">
           <h2 className="text-3xl font-bold pb-7">Recently viewed</h2>
-          <Slider/>
+          <Slider />
         </div>
       </div>
     </>
