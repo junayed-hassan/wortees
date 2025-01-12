@@ -1,8 +1,10 @@
-
+import MyCart from "./MyCart"
 
 function Collezione() {
   return (
-    <div>Collezione</div>
+    <>
+      <MyCart/>
+    </>
   )
 }
 
