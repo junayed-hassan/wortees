@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import { pink } from "@mui/material/colors";
 import Checkbox from "@mui/material/Checkbox";
+import { Link } from "react-router-dom";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function Checkout() {
@@ -114,30 +115,43 @@ function Checkout() {
               </div>
 
               <div>
-                <div className="flex items-center mb-2" >
-                  <Checkbox {...label}defaultChecked sx={{color: pink[800],"&.Mui-checked": {color: pink[600],},}}/>
-                <p className="whitespace-nowrap">
-                  I have read and agree to the website{" "}
-                  <span className="text-red-600">terms and conditions *</span>{" "}
-                </p>
-
+                <div className="flex items-center mb-2">
+                  <Checkbox
+                    {...label}
+                    defaultChecked
+                    sx={{
+                      color: pink[800],
+                      "&.Mui-checked": { color: pink[600] },
+                    }}
+                  />
+                  <p className="whitespace-nowrap">
+                    I have read and agree to the website{" "}
+                    <span className="text-red-600">terms and conditions *</span>{" "}
+                  </p>
                 </div>
-                <div className="flex items-center" >
-                  <Checkbox {...label}defaultChecked sx={{color: pink[800],"&.Mui-checked": {color: pink[600],},}}/>
-                <p>
-                  Subscribe to the newsletter to receive exclusive updates and
-                  promotions!
-                </p>
-
+                <div className="flex items-center">
+                  <Checkbox
+                    {...label}
+                    defaultChecked
+                    sx={{
+                      color: pink[800],
+                      "&.Mui-checked": { color: pink[600] },
+                    }}
+                  />
+                  <p>
+                    Subscribe to the newsletter to receive exclusive updates and
+                    promotions!
+                  </p>
                 </div>
               </div>
-
-              <button className="text-center w-full mt-5 shadow-xl gap-4 mx-auto block bg-[#A81A18] py-2.5 px-5 rounded-xl text-white">
-                <span className="mr-3 uppercase">Place order</span>
-                <span>
-                  <ArrowForwardIcon />
-                </span>
-              </button>
+              <Link to="/confirmOrder">
+                <button className="text-center w-full mt-5 shadow-xl gap-4 mx-auto block bg-[#A81A18] py-2.5 px-5 rounded-xl text-white">
+                  <span className="mr-3 uppercase">Place order</span>
+                  <span>
+                    <ArrowForwardIcon />
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

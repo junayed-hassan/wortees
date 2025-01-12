@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
 import Product from "../../../assets/images/ProductImage.png";
 function Products() {
   return (
     <div className="p-2.5 rounded-lg bg-white drop-shadow-md ">
-      <div className="relative">
-        <img src={Product} alt="Product" />
-        <span className="absolute px-2.5 pb-[2px] text-sm bg-white border top-2 right-2 rounded-xl">
-          Oversize
-        </span>
-      </div>
+      <Link to="/details">
+        <div className="relative">
+          <img src={Product} alt="Product" />
+          <span className="absolute px-2.5 pb-[2px] text-sm bg-white border top-2 right-2 rounded-xl">
+            Oversize
+          </span>
+        </div>
+      </Link>
       <div>
         <h2 className="mt-4 mb-2.5 text-xl font-bold">Zapoj</h2>
         <p className="text-base font-medium">

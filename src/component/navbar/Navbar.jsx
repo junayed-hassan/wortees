@@ -135,8 +135,8 @@ function Navbar() {
             <FavoriteBorderIcon />
           </span>
           <hr className="w-[2px] h-4 bg-black" />
-          <Link to="/">
-          <span className="px-2.5 py-2 border rounded-full">
+          <Link to="/myCart">
+          <span className="px-2.5 pb-3.5 pt-2 border rounded-full">
             <LocalMallIcon />
           </span>
           </Link>

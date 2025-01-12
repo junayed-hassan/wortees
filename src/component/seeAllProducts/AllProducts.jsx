@@ -141,7 +141,7 @@ function AllProducts() {
             <Products />
             <Products />
           </div>
-          <Link to="/manifest">
+          <Link to="">
             <button className="text-center gap-4 mx-auto block bg-[#A81A18] py-4 px-7 rounded-xl text-white">
               <span className="pr-2 uppercase">Vedi tutte</span>
               <span>

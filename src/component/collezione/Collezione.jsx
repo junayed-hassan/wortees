@@ -1,9 +1,10 @@
-import MyCart from "./MyCart"
+import AllProducts from "../seeAllProducts/AllProducts"
+
 
 function Collezione() {
   return (
     <>
-      <MyCart/>
+    <AllProducts/>
     </>
   )
 }

@@ -6,8 +6,8 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import AddIcon from "@mui/icons-material/Add";
-import Slider from "./slider/Slider";
 import { Link } from "react-router";
+import Slider from "./slider/Slider";
 
 export default function MyCart() {
   return (
