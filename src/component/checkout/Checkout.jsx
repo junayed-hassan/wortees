@@ -14,7 +14,7 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function Checkout() {
   return (
     <>
-      <div className="px-10 bg-slate-200">
+      <div className="px-10">
         <h2 className="py-10 text-5xl font-bold text-center">Checkout</h2>
         <div className="grid grid-cols-12 gap-4 pb-16 ">
           <div className="col-span-7">

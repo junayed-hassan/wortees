@@ -12,7 +12,7 @@ import Slider from "./slider/Slider";
 export default function MyCart() {
   return (
     <>
-      <div className="px-10 bg-slate-200">
+      <div className="px-10">
         <h2 className="py-10 text-5xl font-bold text-center">My Cart</h2>
         <div className="grid grid-cols-12 gap-4 mb-16 ">
           <div className="col-span-7">
@@ -171,8 +171,8 @@ export default function MyCart() {
               </li>
             </ul>
           </div>
-          <div className="col-span-5">
-            <div className="flex justify-between px-8 py-3 bg-white border border-red-700 rounded-md">
+          <div className="col-span-5 ">
+            <div className="flex justify-between px-8 py-3 bg-white border border-red-700 rounded-md shadow-md">
               <p className="font-bold text-red-700">
                 <span className="mr-4">
                   <QrCodeScannerIcon />
@@ -183,7 +183,7 @@ export default function MyCart() {
                 <ArrowRightIcon />
               </span>
             </div>
-            <div className="p-4 bg-white rounded-md mt-9">
+            <div className="p-4 bg-white rounded-md shadow-lg mt-9">
               <h4 className="text-lg font-bold mb-2.5">Cart Totals</h4>
               <ul>
                 <li className="flex justify-between mb-2">

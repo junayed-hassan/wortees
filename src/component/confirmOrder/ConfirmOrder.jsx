@@ -1,17 +1,29 @@
-import Vector from "../../assets/images/Vector.png";
+import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
+import SendTimeExtensionIcon from "@mui/icons-material/SendTimeExtension";
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import LockResetIcon from "@mui/icons-material/LockReset";
-import ConOrd from "../../assets/images/ConOrd.png";
-import { pink } from "@mui/material/colors";
-import Checkbox from "@mui/material/Checkbox";
-import { Card, Typography, Button } from "@mui/material";
+import refresh from "../../assets/images/footerIcon/refresh.png";
+import CallToActionIcon from '@mui/icons-material/CallToAction';
+import clock from "../../assets/images/footerIcon/clock.png";
 import Rectangle from "../../assets/images/Rectangle29.png";
+import card from "../../assets/images/footerIcon/card.png";
+import LockResetIcon from "@mui/icons-material/LockReset";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import car from "../../assets/images/footerIcon/car.png";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import Vector from "../../assets/images/Vector.png";
+import ConOrd from "../../assets/images/ConOrd.png";
+import Checkbox from "@mui/material/Checkbox";
+import { pink } from "@mui/material/colors";
+
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 function ConfirmOrder() {
   return (
     <>
-      <div className="px-10 pt-12 pb-8 bg-red-100">
+      <div className="px-10 pt-12 pb-8">
         <div className="flex justify-between pb-10 ">
           <img className="w-32" src={Vector} alt="Vector" />
           <p>
@@ -71,122 +83,208 @@ function ConfirmOrder() {
             </div>
           </div>
 
-          <div className="min-h-screen px-4 py-10 bg-gray-100">
-            
-            <div className="max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-md">
-              
+          <button className="block mb-8 mx-auto text-center mt-7 px-5 py-2 bg-[#A81A18] text-white rounded-lg">
+            <SendTimeExtensionIcon />
+            <span className="uppercase">Track Shipment</span>
+          </button>
+
+          <div className="min-h-screen px-32 py-5 border-t-2 border-dashed">
+            <div className="max-w-4xl mx-auto overflow-hidden ">
               {/* Order Items */}
-              <div className="p-6">
-                {["Sample Product 1", "Sample Product 2"].map(
-                  (product, index) => (
-                    <div
-                      key={index}
-                      className="flex items-start py-4 border-b border-gray-300 last:border-b-0"
-                    >
-                      <img
-                        src={Rectangle} // Replace with actual image URL
-                        alt={product}
-                        className="object-cover w-20 h-20 mr-4 rounded"
-                      />
-                      <div className="flex-1">
-                        <Typography variant="h6" className="text-gray-800">
-                          {product}
-                        </Typography>
-                        <Typography className="mt-1 text-gray-600">
-                          Lorem ipsum dolor sit amet consectetur. Turpis in
-                          vivamus nisl.
-                        </Typography>
-                        <div className="flex items-center justify-between mt-2">
-                          <Typography className="text-gray-600">
-                            Price: €225.00
-                          </Typography>
-                          <Typography className="text-gray-600">
-                            Qty: 2
-                          </Typography>
-                          <Typography className="font-semibold">
-                            €450.00
-                          </Typography>
-                        </div>
-                      </div>
+              <div className="px-24">
+                <div className="flex items-center gap-5 my-7">
+                  <img src={Rectangle} alt="Rectangle" />
+                  <div>
+                    <div className="flex justify-between">
+                      <h2 className="text-2xl font-bold">Sample Product 1</h2>
+                      <span className="underline">Order- #2125</span>
                     </div>
-                  )
-                )}
+                    <p className="mt-2 mb-3">
+                      Lorem ipsum dolor sit amet consectetur. Laoreet netus
+                      gravida diam at faucibus fames. Neque et sollicitudin nibh
+                      tortor accumsan. Turpis in vivamus felis.
+                    </p>
+                    <div className="flex justify-between">
+                      <ul className="flex gap-14">
+                        <li>
+                          <span className="text-gray-500 uppercase">PRICE</span>
+                          <p className="font-bold">€225.00</p>
+                        </li>
+                        <li>
+                          <span className="text-gray-500 uppercase">qty</span>
+                          <p className="font-bold">2</p>
+                        </li>
+                        <li>
+                          <span className="text-gray-500 uppercase">
+                            subtotal
+                          </span>
+                          <p className="font-bold">€450.00</p>
+                        </li>
+                      </ul>
+                      <button className="px-5 font-bold border rounded-lg">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+
+                <div className="flex items-center gap-5 my-7">
+                  <img src={Rectangle} alt="Rectangle" />
+                  <div>
+                    <div className="flex justify-between">
+                      <h2 className="text-2xl font-bold">Sample Product 1</h2>
+                      <span className="underline">Order- #2125</span>
+                    </div>
+                    <p className="mt-2 mb-3">
+                      Lorem ipsum dolor sit amet consectetur. Laoreet netus
+                      gravida diam at faucibus fames. Neque et sollicitudin nibh
+                      tortor accumsan. Turpis in vivamus felis.
+                    </p>
+                    <div className="flex justify-between">
+                      <ul className="flex gap-14">
+                        <li>
+                          <span className="text-gray-500 uppercase">PRICE</span>
+                          <p className="font-bold">€225.00</p>
+                        </li>
+                        <li>
+                          <span className="text-gray-500 uppercase">qty</span>
+                          <p className="font-bold">2</p>
+                        </li>
+                        <li>
+                          <span className="text-gray-500 uppercase">
+                            subtotal
+                          </span>
+                          <p className="font-bold">€450.00</p>
+                        </li>
+                      </ul>
+                      <button className="px-5 font-bold border rounded-lg">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr />
               </div>
 
               {/* Order Summary */}
-              <div className="p-6 bg-gray-100">
-                <Typography
-                  variant="h6"
-                  className="pb-2 text-gray-800 border-b border-gray-300"
-                >
-                  Order Summary
-                </Typography>
-                <div className="mt-4 space-y-2">
+              <div className="pb-10 mt-6 border-b-2 border-dashed px-28">
+                <div className="flex justify-between">
+                  <div className="mb-3">
+                    <h3 className="text-xl font-bold text-gray-800 border-gray-300">
+                      Order Summary
+                    </h3>
+                    <p className="text-gray-400">
+                      Your order is now confirmed!
+                    </p>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 border-gray-300">
+                    Paid with Credit Card
+                  </h3>
+                </div>
+                <div className="space-y-1">
                   <div className="flex justify-between">
-                    <Typography>Subtotal</Typography>
-                    <Typography>$1,300.00</Typography>
+                    <p className="font-bold text-gray-400">Subtotal</p>
+                    <p className="font-bold ">$1,300.00</p>
                   </div>
                   <div className="flex justify-between">
-                    <Typography>Shipping & Handling</Typography>
-                    <Typography>$5.95</Typography>
+                    <p className="font-bold text-gray-400">
+                      Shipping & Handling
+                    </p>
+                    <p className="font-bold ">$5.95</p>
                   </div>
                   <div className="flex justify-between">
-                    <Typography>Est Sales Tax</Typography>
-                    <Typography>$0.69</Typography>
+                    <p className="font-bold text-gray-400">Est Sales Tax</p>
+                    <p className="font-bold ">$0.69</p>
                   </div>
-                  <div className="flex justify-between pt-2 font-semibold border-t border-gray-300">
-                    <Typography>Total (3 items):</Typography>
-                    <Typography>$1,306.64 USD</Typography>
+                  <div className="flex items-center justify-end gap-5 pt-2 font-semibold border-gray-300">
+                    <p className="font-bold">Total (3 items):</p>
+                    <p className="text-xl font-bold">$1,306.64 USD</p>
                   </div>
                 </div>
               </div>
 
+              <div className="px-40 mb-6 text-center mt-7">
+                <h2 className="text-lg font-bold mb-2.5">
+                  Your order #2394839293 has been placed!
+                </h2>
+                <p className="text-gray-400">
+                  We sent an email to{" "}
+                  <span className="text-black">brian.john@gmail.com</span> with
+                  your order confirmation and receipt. If the email hasn’t
+                  arrived within tow minutes, please check your spam folder to
+                  see the email.
+                </p>
+              </div>
+
               {/* Addresses and Shipping */}
-              <div className="p-6">
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                  {[
-                    {
-                      title: "Shipping Address",
-                      details:
-                        "Brian John\n600 Montgomery St\nSan Francisco, CA 90212\nUnited States",
-                    },
-                    {
-                      title: "Billing Details",
-                      details:
-                        "Brian John\n542 N Virginia Ave\nSan Francisco, CA 90212\nUnited States",
-                    },
-                    {
-                      title: "Shipping Method",
-                      details:
-                        "Preferred Method:\nUS Standard (4-5 business days, unless otherwise noted)",
-                    },
-                  ].map((section, index) => (
-                    <Card key={index} variant="outlined" className="p-4">
-                      <Typography variant="subtitle1" className="font-semibold">
-                        {section.title}
-                      </Typography>
-                      <Typography className="mt-2 text-gray-600 whitespace-pre-line">
-                        {section.details}
-                      </Typography>
-                    </Card>
-                  ))}
+
+              <div className="flex gap-5 border">
+                <div className="">
+                  <span><CallToActionIcon/></span>
+                  <h5>Shipping Address</h5>
+                  <p>Brian John</p>
+                  <p>600 Montgomery St</p>
+                  <p>San Fransisco, CA 930122</p>
+                  <p>United States</p>
+                  <p>+2379201374</p>
+                </div>
+                <div className="">
+                  <span><AddLocationAltIcon/></span>
+                  <h5>Billing Details</h5>
+                  <p>Brian John</p>
+                  <p>5442 N Virginia Ave</p>
+                  <p>San Fransisco, CA 930122</p>
+                  <p>United States</p>
+                  <p>+2379201374</p>
+                </div>
+                <div className="">
+                  <span><DirectionsCarFilledIcon/></span>
+                  <h5>Shipping Method</h5>
+                  <p>Preferred Method:</p>
+                  <p>U.S Standard</p>
+                  <p>normally 4-5 business days, unless otherwise noted</p>
+                </div>
+              </div>
+
+              <div>
+                <h2 className="text-center">
+                  Call us at <span className="font-semibold">1-800-748-94200</span> or reply this email
+                </h2>
+                <div className="flex gap-3">
+                  <div className="">
+                  <img className="mx-auto" src={card} alt="card" />
+                    <p>Payment 100% secured</p>
+                  </div>
+                  <div>
+                  <img className="mx-auto" src={car} alt="car" />
+                    <p>guaranteed safe delivery</p>
+                  </div>
+                  <div>
+                  <img className="mx-auto" src={clock} alt="clock" />
+                    <p>fast service delivery</p>
+                  </div>
+                  <div>
+                  <img className="mx-auto" src={refresh} alt="refresh" />
+                    <p>100% easy return</p>
+                  </div>
                 </div>
               </div>
 
               {/* Footer */}
-              <div className="py-4 text-white bg-gray-800">
-                <div className="flex flex-wrap items-center justify-between max-w-4xl px-6 mx-auto">
-                  <Typography>
-                    &copy; 2025 Wortees. All rights reserved.
-                  </Typography>
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    className="mt-2 md:mt-0"
-                    href="tel:1-800-748-94200"
-                  >
-                    Call us at 1-800-748-94200
-                  </Button>
+              <div className="text-center">
+              <img className="w-32 mx-auto" src={Vector} alt="Vector" />
+                  <ul className="flex items-center justify-center">
+                    <li><FacebookIcon/></li>
+                    <li><LinkedInIcon/></li>
+                    <li><InstagramIcon/></li>
+                    <li><YouTubeIcon/></li>
+                  </ul>
+                <p>This email sent from hello@wortess.com</p>
+                <p>For any questions please send an email hello@wortess.com</p>
+                <div className="flex items-center justify-center gap-4">
+                  <p>Privacy Policy </p>
+                  <p>Terms & Conditions</p>
                 </div>
               </div>
             </div>
